@@ -1,3 +1,3 @@
-export function refundTotal(unitPrice: number, quantity: number): number {
-  return unitPrice * quantity;
+export function refundTotal(unitPrice: number, quantity: number, discountPercent = 0): number {
+  return unitPrice * quantity * (1 - discountPercent);
 }
